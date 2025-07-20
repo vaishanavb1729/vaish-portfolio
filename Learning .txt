@@ -1,0 +1,26 @@
+Commands
+✅ npm install
+Purpose: Installs all dependencies listed in your package.json.
+Run this first, after cloning a project or creating a new one.
+This creates a node_modules folder with everything your app needs to run.
+
+✅ npm run dev
+Purpose: Starts the development server.
+This command typically maps to a script defined in package.json under "scripts".
+
+npm run dev not found?
+Check package.json to make sure a dev script exists.
+If not, you might need to add it or use a different command (npm start, vite, etc.).
+
+
+There are two primary ways to export values with JavaScript: default exports and named exports. 
+A file can have no more than one default export, but it can have as many named exports as you like.
+
+Syntax	       Export statement	                                Import statement
+Default	export default function Button() {}	        import Button from './Button.js';
+Named	export function Button() {}	                import { Button } from './Button.js';
+
+When you write a default import, you can put any name you want after import. For example, you could write import Banana from './Button.js' instead and it would still provide you with the same default export. In contrast, with named imports, the name has to match on both sides. That’s why they are called named imports!
+
+People often use default exports if the file exports only one component, and use named exports if it exports multiple components and values. Regardless of which coding style you prefer, always give meaningful names to your component functions and the files that contain them. Components without names, like export default () => {}, are discouraged because they make debugging harder.
+
