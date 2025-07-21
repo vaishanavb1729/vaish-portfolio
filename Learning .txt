@@ -24,3 +24,38 @@ When you write a default import, you can put any name you want after import. For
 
 People often use default exports if the file exports only one component, and use named exports if it exports multiple components and values. Regardless of which coding style you prefer, always give meaningful names to your component functions and the files that contain them. Components without names, like export default () => {}, are discouraged because they make debugging harder.
 
+### Jsx
+JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+as the Web became more interactive, logic increasingly determined content. JavaScript was in charge of the HTML! This is why in React, rendering logic and markup live together in the same place—components.
+React components use a syntax extension called JSX to represent that markup. JSX looks a lot like HTML, but it is a bit stricter and can display dynamic information.
+The Rules of JSX 
+1. Return a single root element 
+To return multiple elements from a component, wrap them with a single parent tag.
+If you don’t want to add an extra <div> to your markup, you can write <> and </> instead:
+This empty tag is called a Fragment. Fragments let you group things without leaving any trace in the browser HTML tree.
+
+Why do multiple JSX tags need to be wrapped? 
+JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. You can’t return two objects from a function without wrapping them into an array. This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+
+2. Close all the tags 
+JSX requires tags to be explicitly closed: self-closing tags like <img> must become <img />, and wrapping tags like <li>oranges must be written as <li>oranges</li>. be careful here about / position
+
+3. camelCase all most of the things! 
+JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like class.
+
+For historical reasons, aria-* and data-* attributes are written as in HTML with dashes.
+
+className=... is used to apply CSS classes to your HTML element in React.
+The expression is inside backticks (`), which allows for template literals in JavaScript.
+
+${isLoaded ? "loaded" : ""} is a ternary operator, meaning:
+If isLoaded is true, use "loaded"     o/p app loaded
+If isLoaded is false, use an empty string ""     o/p app
+
+✅ Why Use This?
+This is often used for:
+Triggering animations after load
+Conditional styling based on state
+Adding/removing classes dynamically
+To delay showing UI until it’s “ready”
+
