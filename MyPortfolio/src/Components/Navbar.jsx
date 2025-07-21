@@ -35,7 +35,7 @@ export  const Navbar=()=>{
        
        {/*start from 20px and and opacity 0 then goto opacity 1 and 0px position */}
         <motion.li variants={fadeInUp} whileHover={{scale:1.1}} whileTap={{scale:0.95}}> 
-         <a>Home</a>
+         <a href="#home">Home</a> {/* this is single page application no routes it is for in page moving*/}
         </motion.li>
          <motion.li variants={fadeInUp} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
           <a>Projects</a>
