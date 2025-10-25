@@ -28,7 +28,7 @@ whileInView={{opacity:1}}
 viewport={{once:true}}
 transition ={{duration:0.6}}
 >
-<p>&copy;2025 VaishanavTech.All rights reserved.</p>
+<p>&copy;2025 VTech.All rights reserved.</p>
 </motion.footer>
 
     </div>
