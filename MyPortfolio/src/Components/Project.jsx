@@ -184,7 +184,7 @@ function Project() {
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
           <h3>Portfolio Website</h3>
-          <p>Same idea but with a different concept or tech stack.</p>
+          <p>Built a responsive portfolio website using React, Framer Motion, and JavaScript with interactive animations and integrated EmailJS for seamless user communication.</p>
           <div className="project-tech">
             <span>React.js</span>
             <span>Javascript</span>
