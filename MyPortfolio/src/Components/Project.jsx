@@ -150,7 +150,7 @@ function Project() {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: `url("vaish-portfolio/${olxImg}")`  ,
+              backgroundImage: `url("/vaish-portfolio/static/olx.jpg")`  ,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
