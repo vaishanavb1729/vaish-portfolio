@@ -97,8 +97,7 @@
 // export default Project;
 
 import { motion } from "framer-motion";
-import olxImg from '../assets/olx.jpg'
-import portfolioImg from '../assets/portfolio.png'
+
 
 
 const fadeInUp = {
@@ -150,7 +149,7 @@ function Project() {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: `url("/vaish-portfolio/static/olx.jpg")`  ,
+              backgroundImage: `url("../assets/olx.jpg")`  ,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -179,7 +178,7 @@ function Project() {
           <motion.div
             className="project-image"
             style={{
-             backgroundImage: `url(${portfolioImg})` ,
+             backgroundImage: `url("..assets/portfolio.png")` ,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
