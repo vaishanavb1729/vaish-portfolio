@@ -97,6 +97,8 @@
 // export default Project;
 
 import { motion } from "framer-motion";
+import olxImg from "../assets/olx.jpg";
+import portfolioImg from "../assets/portfolio.png";
 
 
 
@@ -149,7 +151,7 @@ function Project() {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: `url("../assets/olx.jpg")`  ,
+              backgroundImage: `url(${olxImg})`  ,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -178,7 +180,7 @@ function Project() {
           <motion.div
             className="project-image"
             style={{
-             backgroundImage: `url("..assets/portfolio.png")` ,
+             backgroundImage: `url(${portfolioImg})` ,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
